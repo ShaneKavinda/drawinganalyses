@@ -174,7 +174,7 @@ def main():
         criterion=criterion, 
         optimizer=optimizer_ft, 
         scheduler=exp_lr_scheduler,
-        num_epochs=10)
+        num_epochs=20)
     
     torch.save(model.state_dict(), MODELS_STORAGE / MODEL_NAME)
 
