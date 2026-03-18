@@ -211,7 +211,7 @@ def visualize_model(model, device, dataloaders, class_names, label_to_str, num_i
     fig = plt.figure()
 
     with torch.no_grad():
-        for i, (inputs, labels) in enumerate(dataloaders['val']):
+        for i, (inputs, labels, _) in enumerate(dataloaders['val']):
             inputs = inputs.to(device)
             labels = labels.to(device)
 
